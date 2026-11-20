@@ -18,12 +18,13 @@ const SignupUser = async (req,res) => {
             user : savedUser
         });
 
-    } catch (error) ({
-        res.status(402): "Error creating userr",
+    } catch (error) {
+        res.status(402).json ({
+            message:"internal server error",
         error: error.message
-    });
+    })
 }
-
+}
 module.exports = {
-    SignupUser
+    SignupUser,
 };
