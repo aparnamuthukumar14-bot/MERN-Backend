@@ -1,0 +1,143 @@
+
+.portal-hero {
+  background:
+    linear-gradient(100deg, rgba(20,43,89,.96), rgba(36,107,158,.82)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600")
+    center/cover;
+  padding: 90px 0;
+  color: white;
+  text-align: center;
+}
+
+.portal-hero span {
+  color: #F1B94A;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.portal-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 55px);
+  margin: 20px 0;
+}
+
+.portal-hero p {
+  color: #E3EAF7;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: auto;
+}
+
+.portal-heading {
+  text-align: center;
+}
+
+.portal-heading > span {
+  color: #16A6A0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.portal-card {
+  display: block;
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  border: 1px solid #E5EAF2;
+  box-shadow: 0 8px 25px rgba(20,43,89,.06);
+  transition: .3s;
+}
+
+.portal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(20,43,89,.13);
+  border-color: #16A6A0;
+}
+
+.portal-icon {
+  width: 65px;
+  height: 65px;
+  background: #EAF5F7;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.portal-card h3 {
+  color: #142B59;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.portal-card p {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 75px;
+}
+
+.portal-card-link {
+  display: inline-block;
+  color: #168E91;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.portal-details {
+  padding: 30px 0 80px;
+  background: #EDF2FA;
+}
+
+.portal-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  scroll-margin-top: 110px;
+  border-left: 5px solid #16A6A0;
+}
+
+.portal-detail > span {
+  font-size: 38px;
+}
+
+.portal-detail h2 {
+  color: #142B59;
+  margin-bottom: 10px;
+}
+
+.portal-detail p {
+  color: #64748B;
+  line-height: 1.8;
+}
+
+@media(max-width:850px) {
+  .portal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:550px) {
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-detail {
+    padding: 22px;
+    gap: 15px;
+  }
+}

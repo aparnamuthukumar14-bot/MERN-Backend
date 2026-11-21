@@ -1,0 +1,147 @@
+
+.hero {
+  min-height: 590px;
+  background:
+    linear-gradient(90deg,
+    rgba(10,30,68,.92),
+    rgba(10,30,68,.35)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?w=1800")
+    center/cover no-repeat;
+}
+
+.hero-overlay {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero-tag {
+  color: #F1B94A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.2;
+  margin: 25px 0;
+}
+
+.hero h1 span {
+  color: #F1B94A;
+}
+
+.hero p {
+  max-width: 550px;
+  line-height: 1.8;
+  color: #E3EAF7;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-secondary {
+  color: white;
+  border: 1px solid white;
+  padding: 13px 24px;
+  border-radius: 7px;
+}
+
+.hero-secondary:hover {
+  background: white;
+  color: #142B59;
+}
+
+.home-heading {
+  text-align: center;
+}
+
+.home-heading > span,
+.home-about span {
+  color: #16A6A0;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(20,43,89,.08);
+  border-bottom: 4px solid #16A6A0;
+  transition: .3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.feature-card h3 {
+  color: #142B59;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #64748B;
+  line-height: 1.7;
+}
+
+.home-about {
+  padding: 80px 0;
+  background: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-grid p {
+  color: #64748B;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+@media(max-width:768px) {
+  .feature-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .hero-overlay {
+    min-height: 500px;
+  }
+}

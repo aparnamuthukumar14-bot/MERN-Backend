@@ -1,0 +1,177 @@
+
+.about-hero {
+  background:
+    linear-gradient(90deg, rgba(20,43,89,.95), rgba(36,107,158,.75)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?w=1500")
+    center/cover;
+  padding: 85px 0;
+  color: white;
+}
+
+.about-hero > .container > span:first-child {
+  color: #F1B94A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 18px 0;
+}
+
+.about-hero p {
+  max-width: 600px;
+  line-height: 1.8;
+  color: #E2EAF7;
+  margin-bottom: 22px;
+}
+
+.about-home-link {
+  color: #F1B94A;
+  font-weight: 700;
+}
+
+.breadcrumb {
+  color: white;
+  font-size: 14px;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  min-height: 420px;
+  background: #EDF2FA;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(20,43,89,.13);
+}
+
+.about-label {
+  color: #16A6A0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.about-text h2 {
+  margin-top: 15px;
+}
+
+.about-text p {
+  color: #64748B;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.mission-section {
+  padding: 75px 0;
+  background: #EDF2FA;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.mission-card {
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  border-top: 5px solid #16A6A0;
+  box-shadow: 0 8px 25px rgba(20,43,89,.06);
+}
+
+.vision-card {
+  border-top-color: #F1B94A;
+}
+
+.mission-icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.mission-card h2 {
+  color: #142B59;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #64748B;
+  line-height: 1.8;
+}
+
+.values-heading {
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(20,43,89,.07);
+  transition: .3s;
+}
+
+.value-card:hover {
+  transform: translateY(-7px);
+}
+
+.value-card span {
+  font-size: 38px;
+}
+
+.value-card h3 {
+  color: #142B59;
+  margin: 15px 0 10px;
+}
+
+.value-card p {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media(max-width:800px) {
+  .about-intro,
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+}
+
+@media(max-width:480px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

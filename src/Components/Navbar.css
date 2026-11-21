@@ -1,0 +1,117 @@
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #142B59;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* NAV CONTAINER */
+.nav-container {
+  width: 92%;
+  max-width: 1250px;
+  min-height: 82px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* COLLEGE BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  background: #F1B94A;
+  color: #142B59;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* COLLEGE NAME */
+.brand-name h2 {
+  color: #FFFFFF !important;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.brand-name span {
+  display: block;
+  color: #F1B94A;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #F1B94A;
+}
+
+/* LOGIN BUTTON */
+.nav-links .nav-login {
+  background: #F1B94A;
+  color: #142B59;
+  padding: 12px 23px;
+  border-radius: 6px;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media(max-width:900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background: #142B59;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
